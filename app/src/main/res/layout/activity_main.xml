@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="397dp"
+        android:layout_height="504dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931">
+
+        <Button
+            android:id="@+id/hello"
+            style="bu"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/buttonColor"
+            android:onClick="helloClt"
+            android:text="Hello"
+            android:textColor="@color/textColor"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/iwantotgoto"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+
+            android:background="@drawable/rounded_corners"
+            android:onClick="iWantClt"
+            android:text="I want to go to"
+            android:textColor="@color/textColor"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/howmuchisthis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+
+            android:background="@drawable/rounded_corners"
+            android:onClick="howMuchClt"
+            android:text="How much &#10;is it?"
+            android:textColor="@color/textColor"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/canyouhelpme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="canYouClt"
+            android:text="Can you &#10;help me?"
+            android:textColor="@color/textColor"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/doyouspeakenglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="doUClt"
+            android:text="Do you &#10;speak English?"
+            android:textColor="@color/textColor"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/mynameis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="myNameClt"
+            android:text="My name is"
+            android:textColor="@color/textColor"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/thankyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="thankClt"
+            android:text="Thank you "
+            android:textColor="@color/textColor"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/imfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="imFromClt"
+            android:text="I'm from "
+            android:textColor="@color/textColor"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Spinner
+        android:id="@+id/choiseLanguage"
+        android:layout_width="407dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
